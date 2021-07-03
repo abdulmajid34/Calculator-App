@@ -9,13 +9,15 @@
     <title>Calculator-App</title>
 </head>
 <body>
+    <h1 class="header">Calculator App</h1>
     <div class="cal">
+        <h1></h1>
         <form name="form">
-            <input class="cal-display">
+            <input class="cal-display" placeholder="0">
         </form>
         <table>
             <tr>
-                <td><input type="button" value="C" onclick="remove()"></td>
+                <td><input class="clear" type="button" value="C" onclick="remove()"></td>
                 <td><input type="button" value="DEL" onclick="del()"></td>
                 <td><input type="button" value="/" onclick="insert('/')"></td>
                 <td><input type="button" value="*" onclick="insert('*')"></td>
@@ -36,14 +38,18 @@
                 <td><input type="button" value="1" onclick="insert(1)"></td>
                 <td><input type="button" value="2" onclick="insert(2)"></td>
                 <td><input type="button" value="3" onclick="insert(3)"></td>
-                <td><input type="button" value="=" onclick="eql()"></td>
+                <td rowspan="2"><input style="height: 158px; background-color: yellow;" type="button" value="=" onclick="eql()"></td>
             </tr>
             <tr>
-                <td><input type="button" value="0" onclick="insert(0)"></td>
+                <td colspan="2"><input style="width: 158px;" type="button" value="0" onclick="insert(0)"></td>
                 <td><input type="button" value="," onclick="insert(',')"></td>
             </tr>
         </table>
     </div>
+    <footer class="footer">
+        <span>&copy; 2021 Created By Abdul Majid | Hacktiv8</span>
+        
+    </footer>
     <script src="./main.js"></script>
 </body>
 </html>
